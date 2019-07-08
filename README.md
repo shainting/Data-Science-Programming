@@ -1,7 +1,6 @@
 # 2019年「資料科學程式設計」課程Repository(NTU-CS-X)
 
 ## Introduction
-
 <br /> Name: 蔡烜廷
 <br /> ID：A104221202
 <br /> 學校：世新大學
