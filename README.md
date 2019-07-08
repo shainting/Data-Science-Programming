@@ -1,4 +1,4 @@
-# 2019年「資料科學程式設計」課程Repository(NTU-CS-X)
+# 2019年「資料科學程式設計」課程(NTU-CS-X)
 
 ## Introduction
 <p>Name：蔡烜廷</p>
