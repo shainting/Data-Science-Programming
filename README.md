@@ -6,8 +6,7 @@
 <p>學校：世新大學</p>
 <p>系級：資訊管理學系資訊管理組延一</p>
 
-## 2019年7月8日練習
+## Week1 2019年7月8日練習
 
-Python<br/>
-<a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Link</a>
+Python：<a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Link</a>
 
