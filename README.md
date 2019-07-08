@@ -7,6 +7,4 @@
 <p>系級：資訊管理學系資訊管理組延一</p>
 
 ## Week1 2019年7月8日練習
-
-Python：<a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Link</a>
-
+<a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Python</a>
