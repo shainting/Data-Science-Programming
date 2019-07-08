@@ -8,6 +8,6 @@ ID：A104221202<br/>
 
 ## 2019年7月8日練習
 
-Python
+Python<br/>
 <a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Link</a>
 
