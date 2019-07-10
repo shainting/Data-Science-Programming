@@ -7,5 +7,5 @@
 <p>系級：資訊管理學系資訊管理組延一</p>
 
 ### 2019年7月8日
-<a>R</a>
+<a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/Week01/hw01.html">R</a>
 <a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Python</a>
