@@ -12,3 +12,8 @@
 <li><a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/Week01/hw01.html">R語言</a></li>
 <li><a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Python</a></li>
 </ul>
+### 2019年7月11日
+<ul>
+<li><a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/Week01/hw01.html">R語言</a></li>
+<li><a>Python</a></li>
+</ul>
