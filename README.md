@@ -8,5 +8,7 @@
 
 ## 學習紀錄(Learning Record)
 ### 2019年7月8日
-<a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/Week01/hw01.html">R語言</a>
-<a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Python</a>
+<ul>
+<li><a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/Week01/hw01.html">R語言</a></li>
+<li><a href="https://github.com/shainting/Data-Science-Programming/blob/master/Week01/20190708.ipynb">Python</a></li>
+</ul>
