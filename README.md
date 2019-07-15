@@ -19,3 +19,9 @@
   <li><a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/20190711/hw02_20190711.html">R語言</a></li>
   <li><a>Python</a></li>
 </ul>
+<h3>2019年7月15日</h3>
+<ul>
+  <li>學習目標(Objective)：資料以圖形化的方式呈現</li>
+  <li><a>R語言</a></li>
+  <li><a>Python</a></li>
+</ul>
