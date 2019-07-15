@@ -4,7 +4,7 @@ author: "Shainting"
 date: "2019/7/12"
 output: html_document
 ---
-```{r}
+```{r include = FALSE}
 library(dplyr)
 ```
 
