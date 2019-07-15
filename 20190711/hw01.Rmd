@@ -26,51 +26,56 @@ pre code, pre, code {
   word-wrap: initial !important;
 }
 ```
-
-<h3>勞工對工作時數之滿意情形</h3>
+<h2>目的</h2>
+<p>在台灣看到很多新聞，基本上都在播報有很多勞工對於自己的工作時數或是薪資之類的問題很不滿意等等的問題，讓我們的生活總是瀰漫著對未來不安的氣氛當中，但是我總是看不到實際的數據，所以我從<a href="https://data.gov.tw/">政府的開放資料</a>當中找到兩份資料，一份是「勞工對工作時數之滿意情形」，另一份則是「勞工對整體工作之滿意情形」，來比對工作時數與整體滿意度之間的關係。</p>
+<h2>結果呈現</h2>
+<ol>
+<li><h3>勞工對工作時數之滿意情形</h3>
 ```{r}
 employeeHour <- read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM")
-
+  
 kable(employeeHour %>% filter(V1 == "年齡") %>% select(-V1, -V3) %>% setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))) %>% kable_styling() %>% scroll_box(height = "300px")
 ```
-
-<h3>勞工對整體工作之滿意情形</h3>
+</li>
+<li><h3>勞工對整體工作之滿意情形</h3>
 ```{r}
 employeeEntire <- read.csv("D:/School/2019 - CS - X/data/勞工對整體工作之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM")
 
 kable(employeeEntire %>% filter(V1 == "年齡") %>% select(-V1, -V3) %>% setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))) %>% kable_styling() %>% scroll_box(height = "300px")
 ```
-<h3>開發紀錄</h3>
+</li>
+</ol>
+<h2>開發紀錄</h2>
 <ol>
   <li>由於檔案的編碼問題，所以增加了<code>fileEncoding = "UTF-8-BOM"</code></li>
   <li>原來的資料格式是長這個樣子
-```{r echo=FALSE}
+```{r}
 kable(read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv" ,  fileEncoding ="UTF-8-BOM")) %>% kable_styling() %>% scroll_box(height = "200px")
 ```
   實在太亂了，而且每一個欄位的title變數不好用<br>
   所以加上<code>header = FALSE</code>而不使用原來的變數
-```{r echo=FALSE}
+```{r}
 kable(read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM")) %>% kable_styling() %>% scroll_box(height = "200px")
 ```
   </li>
   <li>在這裡，我想要知道不同年齡層之間工作滿意度的差別，所以我們取<code>filter(V1 == "年齡")</code>(由於有<code>%>%</code>符號的關係，所以filter方法的第一個函數不需要把資料丟進去，只要在前面宣告一次就可以)
-```{r echo=FALSE}
+```{r}
 kable(read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM") %>% filter(V1 == "年齡")) %>% kable_styling() %>% scroll_box(height = "200px")
 ```
   </li>
   <li><code>select(-V1, -V3)</code>，V1為統計項目，V3為樣本數，這兩項資料不需要，所以在變數前面加<code>-</code>符號來做反選取，如此一來，剩下的就是我們要的資料了
-```{r echo=FALSE}
+```{r}
 kable(read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM") %>% filter(V1 == "年齡") %>% select(-V1, -V3)) %>% kable_styling() %>% scroll_box(height = "200px")
 ```
   </li>
   <li>
   接下來就是重新命名變數名稱，以方便之後圖形化的步驟，<code>setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))</code>
-```{r echo=FALSE}
+```{r}
 kable(read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM") %>% filter(V1 == "年齡") %>% select(-V1, -V3) %>% setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))) %>% kable_styling() %>% scroll_box(height = "200px")
 ```
   </li>
 </ol>
-<h3>學習資料來源</h3>
+<h2>學習資料來源</h2>
 <ol>
   <li><a href="https://statistical-programming.com/setnames-r-function-example">SetNames方法</a></li>
   <li><a href="https://medium.com/@kstseng/r-markdown-template-a4b0449a56d5">knitr套件簡易教學，資料輸出表格化</a></li>
