@@ -61,7 +61,7 @@ kable(read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情�
 ```
   </li>
 </ol>
-<h3>學習來源</h3>
+<h3>學習資料來源</h3>
 <ol>
   <li><a href="https://statistical-programming.com/setnames-r-function-example">SetNames方法</a></li>
   <li><a href="https://medium.com/@kstseng/r-markdown-template-a4b0449a56d5">knitr套件簡易教學，資料輸出表格化</a></li>
