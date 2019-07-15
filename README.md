@@ -16,7 +16,7 @@
 <h3>2019年7月11日</h3>
 <ul>
   <li>學習目標(Objective)：找到議題資料兩份，找出相關性並進行初步資料清洗</li>
-  <li><a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/20190711/hw02_20190711.html">R語言</a></li>
+  <li><a href="https://htmlpreview.github.io/?https://github.com/shainting/Data-Science-Programming/blob/master/20190711/hw01.html">R語言</a></li>
   <li><a>Python</a></li>
 </ul>
 <h3>2019年7月15日</h3>
