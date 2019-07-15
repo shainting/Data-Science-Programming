@@ -1,0 +1,24 @@
+---
+title: "hw01"
+author: "Shainting"
+date: "2019/7/12"
+output: html_document
+---
+```{r}
+library(dplyr)
+```
+
+# 勞工對工作時數之滿意情形
+```{r}
+employeeHour <- read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, stringsAsFactors=FALSE, fileEncoding ="UTF-8-BOM")
+
+employeeHour %>% filter(V1 == "年齡") %>% select(-V1, -V3) %>% setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))
+```
+
+# 勞工對整體工作之滿意情形
+```{r}
+employeeEntire <- read.csv("D:/School/2019 - CS - X/data/勞工對整體工作之滿意情形.csv", header=FALSE, stringsAsFactors=FALSE, fileEncoding ="UTF-8-BOM")
+
+employeeEntire %>% filter(V1 == "年齡") %>% select(-V1, -V3) %>% setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))
+```
+
