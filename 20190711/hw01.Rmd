@@ -18,6 +18,15 @@ knitr::opts_chunk$set(echo = TRUE)
 options(knitr.table.format = "html")
 ```
 
+```{css echo = FALSE}
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+```
+
 <h3>勞工對工作時數之滿意情形</h3>
 ```{r}
 employeeHour <- read.csv("D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv", header=FALSE, fileEncoding ="UTF-8-BOM")
