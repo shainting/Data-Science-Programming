@@ -1,0 +1,21 @@
+---
+title: "hw02"
+author: "Shainting"
+date: "2019/7/15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+## R Markdown
+
+```{r}
+filePath <- "D:/School/2019 - CS - X/data/勞工對工作時數之滿意情形.csv"
+employeeHour <- read.csv(filePath, header = FALSE, fileEncoding = "UTF-8-BOM")
+selectedData <- employeeHour %>% filter(V1 == "年齡") %>% select(-V1, -V3) %>% setNames(c("年齡層","很滿意","滿意","普通","不滿意","很不滿意"))
+
+selectedData %>% ggplot(aes(x = 年齡層, y = 很滿意, fill = 年齡層)) + geom_bar(stat = "identity")
+```
